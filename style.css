@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap');
+
+*{
+    font-family: "Gabarito", sans-serif;
+    box-sizing: border-box; /* Garante cálculos de tamanho corretos */
+}
+
+h1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+hr{
+    border: 1px solid gray;
+    border-radius: 20px;
+}
+
+.input1{
+    width: 600px;
+    height: 50px;
+    border-radius: 15px;
+    font-size: 20px;
+    padding: 7px;
+    border: 1px solid rgb(174, 174, 174);
+}
+
+.btn{
+    width: 100px;
+    height: 65px;
+    margin-left: 7px;
+    border-radius: 15px;
+    font-size: 20px;
+    color: white;
+    background-color: #4F46E5;
+    font-weight: 600;
+    border: 1px solid #4F46E5;
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+.btn:hover{
+    color: #4F46E5;
+    background-color: white;
+}
+
+/* ======================================================= */
+/*  CORREÇÃO DAS TAREFAS: ESTILIZAÇÃO DO CONTÊINER DE LINHA */
+/* ======================================================= */
+
+.item-tarefa {
+    display: flex;
+    align-items: center;   /* Alinha verticalmente o checkbox com o texto */
+    width: 100px;          /* Mantém a largura do bloco alinhada */
+    margin-bottom: 15px;   /* <--- ISSO CRIA O ESPAÇO PERFEITO ENTRE AS TAREFAS */
+}
+
+.inpt {
+    width: 20px;           /* Tamanho quadrado padrão para o checkbox */
+    height: 20px;
+    cursor: pointer;
+    margin: 0;             /* Remove as margens soltas antigas */
+}
+
+label {
+    font-size: 20px;
+    margin-left: 12px;     /* Distância horizontal entre o quadradinho e o texto */
+    cursor: pointer;
+    margin-top: 0;         /* Zera os empurramentos antigos */
+}
+/* ======================================================= */
+
+@media (orientation: landscape) {
+    body{
+    }
+}
+
+@media (orientation: portrait) {
+    .input1{
+        width: 350px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+
+    /* Ajuste para as tarefas no celular */
+    .item-tarefa {
+        width: 250px;       /* Dá mais espaço lateral para textos longos no celular */
+        margin-bottom: 20px; /* Espaço ligeiramente maior no celular */
+    }
+
+    .inpt{
+        width: 25px;
+        height: 25px;
+    }
+
+    label{
+        font-size: 24px;
+        margin-left: 15px;
+    }
+
+    #contador{
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .taskcompl{
+        margin-top: 40px;
+        text-align: center;
+        font-size: 22px;
+    }
+
+    .btn{
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 230px;
+        border-radius: 30px;
+    }
+    .list {
+   margin-left: 200px;
+}
+
+}
